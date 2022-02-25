@@ -1,12 +1,29 @@
+:root {
+  --branding-color: #fabe24;
+  --hover-branding-color: #f8b31c;
+  --primary-color: #fdf8ef;
+  --secondary-color: linear-gradient (#64abf3, #506feb);
+  --supporting-color: #d0e6fc;
+}
+
 .App {
   max-width: 600px;
-  margin-top: 80px;
+  margin-top: 56px;
   margin-bottom: 24px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.App react-weather-container {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  border: #506feb;
+}
+
 .App footer {
   font-size: 16px;
-  margin: 8px;
+  margin-top: 24px;
+  text-align: center;
 }

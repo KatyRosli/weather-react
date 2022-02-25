@@ -1,14 +1,29 @@
 import React from "react";
+import Weather from "./Weather";
 import "./App.css";
-import WeatherSearch from "./WeatherSearch";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>My React JS Weather App</h1>
-        <WeatherSearch />
-      </header>
+      <div className="container">
+        <Weather />
+        <footer>
+          Open sourced by
+          <a
+            href="https://github.com/KatyRosli/weather-react"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+          </a>{" "}
+          Katy Rosli
+          <a
+            href="https://www.katyrosli.com"
+            target="_blank"
+            rel="nopener noreferrer"
+          ></a>
+        </footer>
+      </div>
     </div>
   );
 }

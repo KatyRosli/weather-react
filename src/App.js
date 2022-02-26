@@ -8,20 +8,22 @@ function App() {
       <div className="react-weather-container">
         <Weather />
         <footer>
-          Open sourced by
           <a
             href="https://github.com/KatyRosli/weather-react"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {" "}
-          </a>{" "}
-          Katy Rosli
+            Open sourced on Github{" "}
+          </a>
+          by
           <a
             href="https://www.katyrosli.com"
             target="_blank"
             rel="nopener noreferrer"
-          ></a>
+          >
+            {" "}
+            Katy Rosli
+          </a>
         </footer>
       </div>
     </div>

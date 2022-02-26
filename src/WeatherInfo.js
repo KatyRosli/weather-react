@@ -17,7 +17,7 @@ export default function WeatherInfo(props) {
         alt={props.data.description}
         className="weather-icon-currentday"
       />
-      <h3 className="conditions">Rainy</h3>
+      <h3 className="conditions">{props.data.description}</h3>
       <div className="container-current">
         <div className="row">
           <div className="col-3">
@@ -29,16 +29,6 @@ export default function WeatherInfo(props) {
             Humidity
             <br />
             <strong>{props.data.humidity}%</strong>
-          </div>
-          <div className="col-3">
-            Sunrise
-            <br />
-            <strong>{props.data.sunrise}</strong>
-          </div>
-          <div className="col-3">
-            Sunset
-            <br />
-            <strong>{props.data.sunset}</strong>
           </div>
         </div>
       </div>

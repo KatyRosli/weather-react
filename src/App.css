@@ -4,7 +4,8 @@
   --branding-color: #fabe24;
   --hover-branding-color: #f8b31c;
   --primary-color: #2c3f76;
-  --secondary-color: linear-gradient(#6cc1f6, #506feb);
+  --sub-primary-color: #506feb;
+  --secondary-color: linear-gradient(#506feb, #6cc1f6);
   --supporting-color: #e3edfb;
   --font-family: "Quicksand";
 }

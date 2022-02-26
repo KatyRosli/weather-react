@@ -4,12 +4,119 @@
 
 .Weather h1 {
   font-weight: 500;
-  font-size: 64px;
+  font-size: 56px;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 32px;
+  margin-bottom: 0;
 }
 
-.Weather .Main-icon {
-  max-width: 160px;
+.Weather h2 {
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.Weather .celsius {
+  font-size: 16px;
+  position: relative;
+  top: -16px;
+}
+
+.Weather .Weather-icon-current-day {
+  max-width: 80px;
   display: block;
+  margin: auto;
+}
+
+.Weather h3 {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+
+.Weather p {
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.Weather .col-9 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.Weather .form-inline {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.Weather .form-control {
+  padding: 16px;
+  background: var(--supporting-color);
+  border-color: var(--supporting-color);
+  width: 390px;
+  border-radius: 32px;
+}
+
+.Weather .btn {
+  float: right;
+  padding: 16px 24px;
+  border-radius: 32px;
+  margin-left: 16px;
+  margin-right: 0px;
+}
+
+.Weather .btn-warning {
+  background: var(--branding-color);
+  color: var(--primary-color);
+}
+
+.Weather .btn-outline-warning {
+  border-color: var(--branding-color);
+  color: var(--branding-color);
+}
+
+.Weather .btn-outline-warning:hover {
+  background: var(--branding-color);
+  color: var(--primary-color);
+  border: none;
+}
+
+.Weather .col-3 {
+  background: #66b0f4;
+  color: var(--supporting-color);
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 16px;
+  padding: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
+  max-width: 134px;
+  align-items: center;
+  text-align: center;
+}
+
+.Weather .row {
+  margin-top: 24px;
+}
+
+.Weather .col-2 {
+  background: #6bc0f6;
+  color: var(--supporting-color);
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 16px;
+  padding: 8px;
+  margin-left: 9px;
+  margin-right: 9px;
+  align-items: center;
+  text-align: center;
 }

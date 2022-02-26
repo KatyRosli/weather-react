@@ -11,20 +11,19 @@ export default function WeatherInfo(props) {
       </p>
       <h2 className="Current temperature">
         <WeatherTemperature celsius={props.data.temperature} />
-        <span className="celsius">°C</span>
       </h2>
       <img
         src={props.data.icon}
         alt={props.data.description}
         className="weather-icon-currentday"
       />
-      <h3 className="conditions">{props.data.description}</h3>
+      <h3 className="conditions">Rainy</h3>
       <div className="container-current">
         <div className="row">
           <div className="col-3">
-            Wind
+            Windspeed:
             <br />
-            <strong>{props.data.wind}km/h</strong>
+            <strong>{props.data.windspeed}km/h</strong>
           </div>
           <div className="col-3">
             Humidity

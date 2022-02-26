@@ -58,49 +58,12 @@ export default function Weather(props) {
             <i className="fa-solid fa-location-dot"></i>
           </button>
         </form>
-
-        <div className="container-forecast">
-          <div className="row">
-            <div className="col-2">
-              Mon
-              <img src="https://youthful-mirzakhani-0d8d97.netlify.app/images/png/01d.png"></img>
-              <br />
-              <strong>1°C</strong>
-            </div>
-            <div className="col-2">
-              Tue
-              <img src="https://youthful-mirzakhani-0d8d97.netlify.app/images/png/01d.png"></img>
-              <br />
-              <strong>1°C</strong>
-            </div>
-            <div className="col-2">
-              Wed
-              <img src="https://youthful-mirzakhani-0d8d97.netlify.app/images/png/01d.png"></img>
-              <br />
-              <strong>1°C</strong>
-            </div>
-            <div className="col-2">
-              Thu
-              <img src="https://youthful-mirzakhani-0d8d97.netlify.app/images/png/01d.png"></img>
-              <br />
-              <strong>1°C</strong>
-            </div>
-            <div className="col-2">
-              Fri
-              <img src="https://youthful-mirzakhani-0d8d97.netlify.app/images/png/01d.png"></img>
-              <br />
-              <strong>1°C</strong>
-            </div>
-          </div>
-        </div>
+        <WeatherInfo data={weatherData} />
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
-    const apikey = "313875bf8edc10d6e458db37d82896b3";
-    let city = "Stockholm";
-    let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleResponse);
-
+    search();
     return "Loading...";
   }
 }

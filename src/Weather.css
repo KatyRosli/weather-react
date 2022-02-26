@@ -2,7 +2,7 @@
   padding: 16px;
 }
 
-.Weather h1 {
+h1 {
   font-weight: 500;
   font-size: 56px;
   text-align: center;
@@ -10,7 +10,7 @@
   margin-bottom: 0;
 }
 
-.Weather h2 {
+h2 {
   font-weight: 600;
   font-size: 40px;
   text-align: center;
@@ -18,19 +18,13 @@
   margin-bottom: 0;
 }
 
-.Weather .celsius {
+.celsius {
   font-size: 16px;
   position: relative;
   top: -16px;
 }
 
-.Weather .Weather-icon-current-day {
-  max-width: 80px;
-  display: block;
-  margin: auto;
-}
-
-.Weather h3 {
+h3 {
   font-weight: 400;
   font-size: 24px;
   text-align: center;
@@ -38,7 +32,7 @@
   margin-bottom: 16px;
 }
 
-.Weather p {
+p {
   font-weight: 300;
   font-size: 16px;
   text-align: center;
@@ -46,19 +40,19 @@
   margin-bottom: 0;
 }
 
-.Weather .col-9 {
+.col-9 {
   display: inline-block;
   vertical-align: top;
 }
 
-.Weather .form-inline {
+.form-inline {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
 }
 
-.Weather .form-control {
+.form-control {
   padding: 16px;
   background: var(--supporting-color);
   border-color: var(--supporting-color);
@@ -66,7 +60,7 @@
   border-radius: 32px;
 }
 
-.Weather .btn {
+.btn {
   float: right;
   padding: 16px 24px;
   border-radius: 32px;
@@ -74,23 +68,23 @@
   margin-right: 0px;
 }
 
-.Weather .btn-warning {
+.btn-warning {
   background: var(--branding-color);
   color: var(--primary-color);
 }
 
-.Weather .btn-outline-warning {
+.btn-outline-warning {
   border-color: var(--branding-color);
   color: var(--branding-color);
 }
 
-.Weather .btn-outline-warning:hover {
+.btn-outline-warning:hover {
   background: var(--branding-color);
   color: var(--primary-color);
   border: none;
 }
 
-.Weather .col-3 {
+.col-3 {
   background: #66b0f4;
   color: var(--supporting-color);
   font-weight: 400;
@@ -104,19 +98,12 @@
   text-align: center;
 }
 
-.Weather .row {
+.row {
   margin-top: 24px;
 }
 
-.Weather .col-2 {
-  background: #6bc0f6;
-  color: var(--supporting-color);
-  font-weight: 400;
-  font-size: 16px;
-  border-radius: 16px;
-  padding: 8px;
-  margin-left: 9px;
-  margin-right: 9px;
-  align-items: center;
-  text-align: center;
+.icon-today {
+  display: block;
+  margin: 30px auto;
+  width: 80px;
 }

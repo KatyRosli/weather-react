@@ -19,7 +19,7 @@ export default function Weather(props) {
       sunset: response.data.main.sunset,
       data: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
-      icon: response.data.weather[0].icon,
+      icon: `/images${response.data.weather[0].icon}`,
       city: response.data.name,
     });
   }
@@ -39,6 +39,16 @@ export default function Weather(props) {
     axios.get(apiUrl).then(handleResponse);
   }
 
+  function currentLocation(position) {
+    let locationApiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric&appid=bad8df618c99f7689be26e10f430a853`;
+    axios.get(locationApiUrl).then(handleResponse);
+  }
+
+  function displayCurrentLocation(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(currentLocation);
+  }
+
   if (weatherData.ready) {
     return (
       <div className="Weather">
@@ -55,7 +65,10 @@ export default function Weather(props) {
             <i className="fa-solid fa-magnifying-glass"></i>
           </button>
           <button type="button" className="btn btn-outline-warning">
-            <i className="fa-solid fa-location-dot"></i>
+            <i
+              onClick={displayCurrentLocation}
+              className="fa-solid fa-location-dot"
+            ></i>
           </button>
         </form>
         <WeatherInfo data={weatherData} />

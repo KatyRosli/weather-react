@@ -26,18 +26,18 @@ body {
   display: block;
 }
 
-.App container {
+container {
   padding: 0px;
 }
 
-.App .Weather-card {
+.Weather-card {
   position: relative;
   border-radius: 24px;
   background: var(--secondary-color);
   padding: 16px;
 }
 
-.App footer {
+footer {
   font-size: 16px;
   margin-top: 24px;
   text-align: center;
@@ -45,12 +45,12 @@ body {
   margin-bottom: 80px;
 }
 
-.App .github {
+.github {
   color: #506feb;
   text-decoration: none;
 }
 
-.App .name {
+.name {
   color: #506feb;
   text-decoration: none;
 }

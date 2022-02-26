@@ -1,0 +1,16 @@
+.col-2 {
+  background: #6bc0f6;
+  color: var(--supporting-color);
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 16px;
+  padding: 8px;
+  margin-left: 9px;
+  margin-right: 9px;
+  align-items: center;
+  text-align: center;
+}
+
+.row {
+  margin-top: 24px;
+}

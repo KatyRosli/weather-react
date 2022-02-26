@@ -3,30 +3,53 @@
 :root {
   --branding-color: #fabe24;
   --hover-branding-color: #f8b31c;
-  --primary-color: #fdf8ef;
-  --secondary-color: linear-gradient (#64abf3, #506feb);
-  --supporting-color: #d0e6fc;
+  --primary-color: #2c3f76;
+  --secondary-color: linear-gradient(#6cc1f6, #506feb);
+  --supporting-color: #e3edfb;
   --font-family: "Quicksand";
 }
 
+body {
+  padding: 0px;
+  font-family: var(--font-family);
+  font-weight: 800;
+  color: var(--supporting-color);
+}
+
 .App {
-  max-width: 600px;
+  max-width: 640px;
   margin-top: 56px;
   margin-bottom: 24px;
   margin-left: auto;
   margin-right: auto;
+  display: block;
 }
 
-.App .react-weather-container {
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-left: 16px;
-  margin-right: 16px;
-  background-color: #506feb);
+.App container {
+  padding: 0px;
+}
+
+.App .Weather-card {
+  position: relative;
+  border-radius: 24px;
+  background: var(--secondary-color);
+  padding: 16px;
 }
 
 .App footer {
   font-size: 16px;
   margin-top: 24px;
   text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 80px;
+}
+
+.App .github {
+  color: #506feb;
+  text-decoration: none;
+}
+
+.App .name {
+  color: #506feb;
+  text-decoration: none;
 }

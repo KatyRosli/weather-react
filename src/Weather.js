@@ -20,8 +20,9 @@ export default function Weather() {
       </div>
       <h1>Stockholm</h1>
       <img
-        src="https://youthful-mirzakhani-0d8d97.netlify.app/images/gif/02n.gif"
+        src="https://basmilius.github.io/weather-icons/production/fill/all/clear-day.svg"
         alt="Weather icon"
+        className="Main-icon"
       ></img>
       <h2>1°C</h2>
       <h3>Mostly cloudy</h3>

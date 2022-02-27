@@ -26,9 +26,10 @@ h2 {
 
 h3 {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
   text-align: center;
   margin-bottom: 16px;
+  margin-top: -40px;
 }
 
 p {
@@ -103,6 +104,8 @@ p {
 
 .weather-icon-currentday {
   display: block;
-  margin: 0 auto;
-  width: 160px;
+  margin-top: -40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 240px;
 }

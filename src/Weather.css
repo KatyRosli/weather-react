@@ -29,15 +29,15 @@ h3 {
   font-size: 16px;
   text-align: center;
   margin-bottom: 16px;
-  margin-top: -40px;
+  margin-top: -16px;
 }
 
 p {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   margin-top: 8px;
-  margin-bottom: 0;
+  margin-bottom: 24px;
 }
 
 .col-9 {
@@ -73,13 +73,18 @@ p {
   color: var(--primary-color);
 }
 
+.btn-warning:hover {
+  background: var(--hover-branding-color);
+  color: var(--primary-color);
+}
+
 .btn-outline-warning {
   border-color: var(--branding-color);
   color: var(--branding-color);
 }
 
 .btn-outline-warning:hover {
-  background: var(--branding-color);
+  background: var(--hover-branding-color);
   color: var(--primary-color);
   border: none;
 }
@@ -91,6 +96,7 @@ p {
   font-size: 16px;
   border-radius: 16px;
   padding: 8px;
+  margin-bottom: 24px;
   margin-left: 4px;
   margin-right: 4px;
   max-width: 134px;
@@ -100,12 +106,21 @@ p {
 
 .row {
   margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .weather-icon-currentday {
   display: block;
-  margin-top: -40px;
+  margin-top: -16px;
   margin-left: auto;
   margin-right: auto;
   width: 240px;
+}
+
+.WeatherForecast-temperature-max {
+  font-weight: 600;
+}
+
+.WeatherForecast-temperature-min {
+  font-weight: 300;
 }

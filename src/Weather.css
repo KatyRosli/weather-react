@@ -96,7 +96,6 @@ p {
   font-size: 16px;
   border-radius: 16px;
   padding: 8px;
-  margin-bottom: 24px;
   margin-left: 4px;
   margin-right: 4px;
   max-width: 134px;
@@ -106,7 +105,6 @@ p {
 
 .row {
   margin-top: 24px;
-  margin-bottom: 24px;
 }
 
 .weather-icon-currentday {

@@ -61,10 +61,10 @@ export default function Weather(props) {
             aria-label="Search"
             onChange={handleCityChange}
           />
-          <button type="button" className="btn btn-warning">
+          <button type="submit" value="Search" className="btn btn-warning">
             <i className="fa-solid fa-magnifying-glass"></i>
           </button>
-          <button type="button" className="btn btn-outline-warning">
+          <button type="current-location" className="btn btn-outline-warning">
             <i
               onClick={displayCurrentLocation}
               className="fa-solid fa-location-dot"

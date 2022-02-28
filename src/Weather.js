@@ -40,7 +40,7 @@ export default function Weather(props) {
   }
 
   function currentLocation(position) {
-    let locationApiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric&appid=bad8df618c99f7689be26e10f430a853`;
+    let locationApiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric&appid=313875bf8edc10d6e458db37d82896b3`;
     axios.get(locationApiUrl).then(handleResponse);
   }
 

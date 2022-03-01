@@ -64,11 +64,12 @@ export default function Weather(props) {
           <button type="submit" value="Search" className="btn btn-warning">
             <i className="fa-solid fa-magnifying-glass"></i>
           </button>
-          <button type="current-location" className="btn btn-outline-warning">
-            <i
-              onClick={displayCurrentLocation}
-              className="fa-solid fa-location-dot"
-            ></i>
+          <button
+            type="current-location"
+            className="btn btn-outline-warning"
+            onClick={displayCurrentLocation}
+          >
+            <i className="fa-solid fa-location-dot"></i>
           </button>
         </form>
         <WeatherInfo data={weatherData} />

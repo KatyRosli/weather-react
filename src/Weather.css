@@ -122,3 +122,13 @@ p {
 .WeatherForecast-temperature-min {
   font-weight: 300;
 }
+
+@media (max-width: 576px) {
+  .btn-warning {
+    display: none;
+  }
+
+  .form-control {
+    width: 200px;
+  }
+}

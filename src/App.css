@@ -54,9 +54,3 @@ footer {
   color: #506feb;
   text-decoration: none;
 }
-
-@media (max-width: 576px) {
-  .botton.btn.btn-warning {
-    display: none;
-  }
-}

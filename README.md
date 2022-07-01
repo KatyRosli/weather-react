@@ -3,7 +3,7 @@
 - It was fun designing & implementing my first ever react app! The api weather app from: https://openweathermap.org/. The components was implemented to
 easily maintain and clean code.
 
-![screenshot](./ReactWeatherApp.jpg)
+![screenshot](./ReactWeatherApp.png)
 
 # Built with 🛠️:
 - Figma
